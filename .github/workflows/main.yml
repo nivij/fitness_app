@@ -11,7 +11,8 @@ on:
 jobs:
   build:
     name: Build & Release
-    runs-on: mascos-latest
+    runs-on: windows-latest
+
 
 
     steps:
