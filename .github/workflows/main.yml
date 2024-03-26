@@ -33,7 +33,7 @@ jobs:
 
       - name: Install Dependencies
         run: flutter pub get -v
-        retries: 3
+
 
       - name: Test flutter app
         run: flutter test
