@@ -28,7 +28,7 @@ jobs:
       - name: Set Up Flutter (Latest Version)
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'latest'
+          flutter-version: ' 3.19.0'
           channel: 'stable'
 
       - name: Install Dependencies
