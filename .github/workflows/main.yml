@@ -26,7 +26,7 @@ jobs:
           java-version: '17'
 
       - name: Set Up Flutter (Latest Version)
-        uses: subosito/flutter-action@v3
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: 'latest'
           channel: 'stable'
