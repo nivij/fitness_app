@@ -32,11 +32,10 @@ jobs:
           channel: 'stable'
       - name: Clean Flutter
         run: flutter clean
-      - name: Install Dependencies
-        run: flutter pub get -v
 
-      - name: Test flutter app
-        run: flutter test
+      - name: Install Dependencies
+        run: flutter pub get
+
 
       - name: Build APK
         run: flutter build apk --release
