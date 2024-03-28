@@ -1,33 +1,35 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../../res/constant/mediaquery.dart';
 
 class Fitnesstext extends StatelessWidget {
-  const Fitnesstext({super.key});
+  const Fitnesstext({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(8.0 * Constants.screenWidthMultiplier),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             "Fitness",
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.quicksand(
               textStyle: TextStyle(
-                  color: Colors.black,
-                  fontSize: 47,
-                  fontWeight: FontWeight.w600),
+                color: Colors.black,
+                fontSize: 44 * Constants.screenWidthMultiplier,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
           Text(
             "Tracking Device",
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.quicksand(
               textStyle: TextStyle(
-                  color: Colors.black,
-                  fontSize: 47,
-                  fontWeight: FontWeight.w600),
+                color: Colors.black,
+                fontSize: 40 * Constants.screenWidthMultiplier,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ],
