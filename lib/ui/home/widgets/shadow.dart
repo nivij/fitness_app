@@ -54,6 +54,7 @@ class CustomShadowWidget extends StatelessWidget {
     return CarouselSlider(
       items: [
         _buildCarouselItem(),
+        _buildCarouselItem(),
       ],
       options: CarouselOptions(
         height: 290,

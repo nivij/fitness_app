@@ -4,17 +4,24 @@ import 'package:fitness_app/res/constant/icon.dart';
 import 'mediaquery.dart';
 
 class AppBarUtil {
-  static PreferredSizeWidget buildAppBar(BuildContext context) {
+  static PreferredSizeWidget buildAppBar(BuildContext context, Color appBarColor) {
     return AppBar(
-      backgroundColor: Color(0XFFF2F2F2),
+      toolbarHeight: 60,
+      bottom: PreferredSize(
+        preferredSize: Size.fromHeight(30 * Constants.screenWidthMultiplier),
+        child: Container(),
+      ),      backgroundColor: appBarColor, // Set the AppBar color dynamically
       leadingWidth: 80 * Constants.screenWidthMultiplier,
       leading: CircleAvatar(
-
-          child: IconConstants.arrowBackIcon),
+        backgroundColor: Colors.white,
+        child: IconConstants.arrowBackIcon,
+      ),
       actions: [
         CircleAvatar(
-            radius:40,child: IconConstants.shoppingBagIcon),
-
+          backgroundColor: Colors.white,
+          radius: 40,
+          child: IconConstants.shoppingBagIcon,
+        ),
         CircleAvatar(
           radius: 40, // Adjust the radius as needed
           backgroundColor: Colors.transparent, // Ensure the circle's background is transparent
@@ -22,8 +29,9 @@ class AppBarUtil {
             child: ImageConstants.backgroundImage,
           ),
         ),
-
       ],
+
+
     );
   }
 }
