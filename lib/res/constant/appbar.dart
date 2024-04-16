@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fitness_app/res/constant/icon.dart';
+import 'package:flutter_bounceable/flutter_bounceable.dart';
+import 'package:get/get.dart';
 
 import 'mediaquery.dart';
 
@@ -12,9 +14,12 @@ class AppBarUtil {
         child: Container(),
       ),      backgroundColor: appBarColor, // Set the AppBar color dynamically
       leadingWidth: 80 * Constants.screenWidthMultiplier,
-      leading: CircleAvatar(
-        backgroundColor: Colors.white,
-        child: IconConstants.arrowBackIcon,
+      leading: Bounceable(
+        onTap: () => Get.back(),
+        child: CircleAvatar(
+          backgroundColor: Colors.white,
+          child: IconConstants.arrowBackIcon,
+        ),
       ),
       actions: [
         CircleAvatar(
