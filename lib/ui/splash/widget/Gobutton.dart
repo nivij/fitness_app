@@ -87,7 +87,7 @@ class _GoButtonState extends State<GoButton>
             transitionType: ContainerTransitionType.fadeThrough,
             closedShape: CircleBorder(),
             closedBuilder: (context, action) => Container(
-              height: getHeight(250),
+              height: getHeight(270),
               decoration:
                   BoxDecoration(color: Colors.black, shape: BoxShape.circle),
               child: Center(

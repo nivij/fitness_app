@@ -48,7 +48,7 @@ class first extends StatelessWidget {
                 top: getHeight(390),
                 left: getWidth(174),
                 right: getWidth(-10),
-                bottom: getHeight(0),
+                bottom: getHeight(170*2),
                 child: AnimatedAppear(
                   delay: Duration(milliseconds: 2100),
                   duration: Duration(milliseconds: 400),
